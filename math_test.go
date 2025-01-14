@@ -191,9 +191,6 @@ func getSortedKeys(m map[string]float64) []string {
 
 // Helper function to compare string slices
 func compareStringSlices(a, b []string) bool {
-	if len(a) != len(b) {
-		return false
-	}
 	for i := range a {
 		if a[i] != b[i] {
 			return false

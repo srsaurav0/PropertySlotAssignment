@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"sort"
 	"strings"
 )
@@ -9,14 +9,14 @@ import (
 // Main function
 func main() {
 	input := map[string]float64{
-		"11": 30.0,
-		"12": 30.0,
-		"24": 40.0,
+		"11": 40,
+		"12": 33.0,
+		"24": 27.0,
 	}
 	input = validate_input(input)
-	output := assign_feed(input, 9, "12-11-24")
-	fmt.Println("Input percentage map: ", input)
-	fmt.Println("Output feed map: ", output)
+	output := assign_feed(input, 3, "12-11-24")
+	log.Println("Input percentage map: ", input)
+	log.Println("Output feed map: ", output)
 }
 
 // Check for invalid inputs and modify the input
